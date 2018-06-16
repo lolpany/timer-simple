@@ -1,0 +1,589 @@
+@media (max-aspect-ratio: 6/5) {
+    body {
+        grid-template-rows: 38% 20% 38%;
+        margin: 0;
+    }
+
+    .times {
+        grid-column: 1/2;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: 1fr;
+    }
+
+    .popTimesRow {
+        grid-template-columns: 0 1fr 1fr 1fr 1fr 1fr 0;
+    }
+
+    .popTime {
+        margin: 3px;
+        font-size: 2vh;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .timeRow {
+        height: 14vh;
+        grid-template-columns: 0 1fr 0;
+    }
+
+    .time {
+        /*height: 12vh;*/
+        grid-template-columns: 3fr 3fr 0.5fr 3fr 3fr 0.5fr 3fr 3fr 0.5fr;
+    }
+
+    .timeInput {
+        /*height: 12vh;*/
+        font-size: 14vh;
+        padding-left: 0;
+        padding-right: 0;
+        margin: 0;
+    }
+
+    div.between-time-space {
+        font-size: 3vh;
+    }
+
+    .buttons {
+        margin-top: 1vw;
+        margin-bottom: 0;
+        width: 100%;
+        /*height: 45vw;*/
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+
+    .zero {
+        grid-row: 3/6;
+        grid-column: 1/2;
+    }
+
+    .topNum {
+        grid-row: 3/4;
+    }
+
+    .middleNum {
+        grid-row: 4/5;
+    }
+
+    .bottomNum {
+        grid-row: 5/6;
+    }
+
+    .leftNum {
+        grid-column: 2/3;
+    }
+
+    .centerNum {
+        grid-column: 3/4;
+    }
+
+    .rightNum {
+        grid-column: 4/5;
+    }
+
+    .numButton {
+        font-size: 4vh;
+    }
+
+    .startStop {
+        grid-row: 1/3;
+        grid-column: 1/5;
+        font-size: 6vh;
+    }
+
+    .restart {
+        font-size: 2.5vh;
+        border-width: 1px;
+        border-top: dashed;
+        border-left: dashed;
+        border-right: dashed;
+    }
+
+}
+
+@media (min-aspect-ratio: 6/5) and (max-width: 900px) {
+    html {
+        height: 100%;
+        width: 98%;
+    }
+
+    body {
+        grid-template-rows: 1fr 2fr 1fr;
+        height: 100%;
+        width: 98%;
+    }
+
+    .times {
+        grid-column: 1/4;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .popTimesRow {
+        grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 2fr;
+    }
+
+    .popTime {
+        font-size: 3vh;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+    .timeRow {
+        grid-template-columns: 5.25fr 9fr 5.05fr;
+    }
+
+    .time {
+        grid-template-columns: 1.5fr 1.5fr 1fr 1.5fr 1.5fr 1fr 1.5fr 1.5fr 1fr;
+    }
+
+    .timeInput {
+        font-size: 28vh;
+        width: 8vw;
+    }
+
+    div.between-time-space {
+        font-size: 3vw;
+    }
+
+    .buttons {
+        width: 100%;
+        /*grid-column: 2/3;*/
+        margin-top: 3%;
+    }
+
+    .zero {
+        grid-row: 1/4;
+        grid-column: 1/2;
+    }
+
+    .topNum {
+        grid-row: 1/2;
+    }
+
+    .middleNum {
+        grid-row: 2/3;
+    }
+
+    .bottomNum {
+        grid-row: 3/4;
+    }
+
+    .leftNum {
+        grid-column: 2/3;
+    }
+
+    .centerNum {
+        grid-column: 3/4;
+    }
+
+    .rightNum {
+        grid-column: 4/5;
+    }
+
+    .startStop {
+        grid-row: 1/4;
+        grid-column: 5/7;
+        font-size: 3vw;
+    }
+
+    .numButton {
+        font-size: 2vw;
+    }
+
+    .restart {
+        font-size: 2.5vh;
+        border-top: dashed;
+        border-left: dashed;
+        border-right: dashed;
+    }
+}
+
+@media (min-aspect-ratio: 6/5) and (min-width: 900px) {
+    body {
+        grid-template-rows: 39% 20% 39%;
+    }
+
+    .times {
+        grid-column: 1/4;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .popTimesRow {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .popTime {
+        font-size: 3vh;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+    .timeRow {
+        grid-template-columns: 4.5fr 9fr 3.5fr;
+    }
+
+    .time {
+        grid-template-columns: 1.5fr 1.5fr 1fr 1.5fr 1.5fr 1fr 1.5fr 1.5fr 1fr;
+    }
+
+    .timeInput {
+        font-size: 18vh;
+        width: 8vw;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    div.between-time-space {
+        font-size: 3vw;
+    }
+
+    .buttons {
+        width: 80vmin;
+        /*grid-column: 2/3;*/
+        margin-top: 3%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .zero {
+        grid-row: 1/4;
+        grid-column: 1/2;
+    }
+
+    .topNum {
+        grid-row: 1/2;
+    }
+
+    .middleNum {
+        grid-row: 2/3;
+    }
+
+    .bottomNum {
+        grid-row: 3/4;
+    }
+
+    .leftNum {
+        grid-column: 2/3;
+    }
+
+    .centerNum {
+        grid-column: 3/4;
+    }
+
+    .rightNum {
+        grid-column: 4/5;
+    }
+
+    .startStop {
+        grid-row: 1/4;
+        grid-column: 5/7;
+        font-size: 3vw;
+    }
+
+    .numButton {
+        font-size: 2vw;
+    }
+
+    .restart {
+        font-size: 2vw;
+        border-top: dashed;
+        border-left: dashed;
+        border-right: dashed;
+    }
+}
+
+
+html {
+    background-color: #2d2d2c;
+    height: 100%;
+    /*width: 100vw;*/
+}
+
+body {
+    grid-template-columns: 1fr;
+    height: 98%;
+    /*width: 100vw;*/
+    display: grid;
+}
+
+.timeRow {
+    grid-column: 1/4;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-rows: 1fr;
+    font-size: 33vw;
+    color: white;
+}
+
+.restart {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.restart.start {
+    background-color: #2d2d2c;
+    color: #999999;
+}
+
+.restart.nostart {
+    color: transparent;
+    background-color: transparent;
+}
+
+.restart.stop {
+    background-color: #2d2d2c;
+    color: #999999;
+}
+
+/*.restart:hover */
+.restart.start:hover {
+    background-color: #223522;
+}
+
+.restart.start:active {
+    background-color: lightgreen;
+}
+
+.restart.stop:hover {
+    background-color: #453333;
+}
+
+.restart.stop:active {
+    background-color: lightcoral;
+}
+
+.restartTime {
+    display: flex;
+    /*font-size: 4vh;*/
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.restart.drag {
+    color: #999999;
+    background-color: ghostwhite;
+}
+
+.time {
+    display: grid;
+    grid-template-rows: 100%;
+    color: white;
+}
+
+.timeInput {
+    background-color: #2d2d2c;
+    outline: none;
+    border: none;
+    width: auto;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    vertical-align: middle;
+}
+
+div.between-time-space {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+    color: #999999;
+    margin-left: 0;
+    height: 100%;
+}
+
+div.between-time-space span {
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.buttonsRow {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.buttons {
+    /*height: 100%;*/
+    /*grid-row: 3/4;*/
+    display: grid;
+    background-color: #2d2d2c;
+    color: #999999;
+    text-align: center;
+}
+
+.numButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hours-hi {
+    justify-content: flex-end;
+}
+
+.hours-low {
+}
+
+.minutes-hi {
+    justify-content: flex-end;
+}
+
+.seconds-hi {
+    justify-content: flex-end;
+}
+
+/*.numButton > span {*/
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+/*}*/
+
+.numButton.start:hover {
+    background-color: #353535;
+}
+
+.numButton.start:active {
+    background-color: ghostwhite;
+}
+
+.numButton.stop {
+    color: #2d2d2c;
+    border: none;
+}
+
+.timeInput.enabled {
+    color: #999999;
+    border: none;
+}
+
+@keyframes blinker {
+    /*50% {*/
+        /*!*color: #666666;*!*/
+    /*}*/
+    50% {
+        /*color: #ffffff;*/
+        background-color: #555555;
+    }
+}
+
+.timeInput.active {
+    color: #999999;
+    animation: blinker 1s linear infinite;
+}
+
+.timeInput.enabled:hover {
+    background-color: #353535;
+}
+
+.timeInput.disabled {
+    border: none;
+    color: white;
+}
+
+.startStop.start {
+    background-color: #2d2d2c;
+    color: #999999;
+    display: flex;
+    align-items: center;
+}
+
+.startStop.stop {
+    background-color: #2d2d2c;
+    color: #999999;
+    display: flex;
+    align-items: center;
+}
+
+.startStop.nostart {
+    color: transparent;
+    background-color: transparent;
+}
+
+.startStop.start:hover {
+    background-color: #223522;
+}
+
+.startStop.start:active {
+    background-color: lightgreen;
+}
+
+.startStop.stop:hover {
+    background-color: #453333;
+}
+
+.startStop.stop:active {
+    background-color: lightcoral;
+}
+
+.startStop > span {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.empty {
+    border: none;
+}
+
+.retryTimeUnitLabels {
+    vertical-align: middle;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: left;
+}
+
+.times {
+    width: 100vw;
+    grid-row: 1/2;
+    height: auto;
+    display: grid;
+}
+
+.popTimesRow {
+    width: 100vw;
+    display: grid;
+    grid-template-rows: 1fr;
+}
+
+.popTime {
+    color: #999999;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 5fr 1fr 5fr 1fr 5fr;
+}
+
+.popTime.hover {
+    background-color: ghostwhite;
+}
+
+.popTime:hover {
+    background-color: #223522;
+}
+
+.popTime.highlight {
+    background-color: #353535;
+}
+
+.popTime:active {
+    background-color: lightgreen;
+}
+
+.popTime.stop {
+    /*color: transparent;*/
+}

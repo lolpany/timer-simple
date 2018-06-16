@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="ISO-8859-1">
+    <title>timer</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="timer.js" charset="ISO-8859-1"></script>
+</head>
+<body onload="onload();">
+<div class="times">
+    <div class="popTimesRow">
+        <div></div>
+        <div class="popTime start" oncontextmenu="popTimeOnContextMenu(event)"></div>
+        <div class="popTime start" oncontextmenu="popTimeOnContextMenu(event)"></div>
+        <div class="popTime start" oncontextmenu="popTimeOnContextMenu(event)"></div>
+        <div class="popTime start" oncontextmenu="popTimeOnContextMenu(event)"></div>
+        <div class="popTime start" oncontextmenu="popTimeOnContextMenu(event)"></div>
+        <div></div>
+    </div><!---->
+    <div class="popTimesRow">
+        <div></div>
+        <div class="popTime start" oncontextmenu="popTimeOnContextMenu(event)"></div>
+        <div class="popTime start" oncontextmenu="popTimeOnContextMenu(event)"></div>
+        <div class="popTime start" oncontextmenu="popTimeOnContextMenu(event)"></div>
+        <div class="popTime start" oncontextmenu="popTimeOnContextMenu(event)"></div>
+        <div class="popTime start" oncontextmenu="popTimeOnContextMenu(event)"></div>
+        <div></div>
+    </div>
+    <div class="popTimesRow">
+        <div></div>
+        <div class="popTime start" oncontextmenu="popTimeOnContextMenu(event)"></div>
+        <div class="popTime start" oncontextmenu="popTimeOnContextMenu(event)"></div>
+        <div class="restart start" onclick="restart()" draggable="true" onmousedown="dragTimeMouseDown(event)"
+             ondragstart="dragTimeStart(event);" ondragend="dragTimeEnd()">
+            <div class="restartTime"></div>
+        </div>
+        <!--<div class="popTime start" oncontextmenu="popTimeOnContextMenu(event)"></div>-->
+        <div class="popTime start" oncontextmenu="popTimeOnContextMenu(event)"></div>
+        <div class="popTime start" oncontextmenu="popTimeOnContextMenu(event)"></div>
+        <div></div>
+    </div>
+</div>
+<div class="timeRow start">
+    <div></div>
+    <div class="time start">
+        <input type="text" class="hours" maxlength="2" min="0" max="99" value="00">
+        <div class="between-time-space">h</div>
+        <input type="text" class="minutes" maxlength="2" min="0" max="99" value="00">
+        <div class="between-time-space">m</div>
+        <input type="text" class="seconds" maxlength="2" min="0" max="99" value="00">
+        <div class="between-time-space seconds">s</div>
+    </div>
+    <div></div>
+</div>
+<div class="buttons">
+    <div class="numButton start zero" onmousedown="pressNum(48 + 0)"><span>0</span></div>
+    <div class="numbers">
+        <div class="numButton start topNum" onmousedown="pressNum(48 + 7)"><span>7</span></div>
+        <div class="numButton start topNum" onmousedown="pressNum(48 + 8)"><span>8</span></div>
+        <div class="numButton start topNum" onmousedown="pressNum(48 + 9)"><span>9</span></div>
+        <div class="numButton start middleNum" onmousedown="pressNum(48 + 4)"><span>4</span></div>
+        <div class="numButton start middleNum" onmousedown="pressNum(48 + 5)"><span>5</span></div>
+        <div class="numButton start middleNum" onmousedown="pressNum(48 + 6)"><span>6</span></div>
+        <div class="numButton start bottomNum" onmousedown="pressNum(48 + 1)"><span>1</span></div>
+        <div class="numButton start bottomNum" onmousedown="pressNum(48 + 2)"><span>2</span></div>
+        <div class="numButton start bottomNum" onmousedown="pressNum(48 + 3)"><span>3</span></div>
+    </div>
+    <div class="controlButtons">
+        <div class="startStop nostart" onclick="startStop()"><span>START</span></div>
+    </div>
+</div>
+</body>
+</html>
