@@ -328,6 +328,7 @@ function startStop() {
 function stopRing() {
     ring.pause();
     ring.currentTime = 0;
+    setViewTime(lastTimer);
     stop();
 }
 
