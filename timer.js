@@ -294,11 +294,11 @@ function pressNum(keyCode) {
             }*/
         incrementTimeCursorPosition();
         timeToCountInSeconds = parseTimeView();
-        if (timeToCountInSeconds > 0) {
+        // if (timeToCountInSeconds > 0) {
             setStartStopViewState(document.getElementsByClassName("startStop")[0], 'start');
-        } else {
-            setStartStopViewState(document.getElementsByClassName("startStop")[0], 'nostart');
-        }
+        // } else {
+        //     setStartStopViewState(document.getElementsByClassName("startStop")[0], 'nostart');
+        // }
         lastTimer = timeToCountInSeconds;
         drawRestartTime(timeToCountInSeconds);
     }
@@ -306,7 +306,7 @@ function pressNum(keyCode) {
 
 function setStartStopViewState(view, state) {
     view.classList.remove('start');
-    view.classList.remove('nostart');
+    // view.classList.remove('nostart');
     view.classList.add(state);
 }
 
@@ -480,12 +480,12 @@ function drawStartStop() {
         setRestartViewState(startStopDiv, 'stop');
         startStopDiv.children[0].innerText = 'STOP';
     } else if (mode == 'stopped') {
-        if (timeToCountInSeconds - countedSeconds > 0) {
+        // if (timeToCountInSeconds - countedSeconds > 0) {
             setRestartViewState(startStopDiv, 'start');
             startStopDiv.children[0].innerText = 'START';
-        } else {
-            setRestartViewState(startStopDiv, 'nostart');
-        }
+        // } else {
+        //     setRestartViewState(startStopDiv, 'nostart');
+        // }
     } else if (mode == 'running') {
         setRestartViewState(startStopDiv, 'stop');
         startStopDiv.children[0].innerText = 'PAUSE';
