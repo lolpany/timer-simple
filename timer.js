@@ -398,7 +398,7 @@ function stop() {
 function onTick() {
     var currentTime = new Date().getTime();
     if ((currentTime - startTime) / 1000 > countedSeconds + 1) {
-        countedSeconds++;
+        countedSeconds = Math.floor((currentTime - startTime) / 1000);
         timeLeft = timeToCountInSeconds - countedSeconds;
         setViewTime(timeLeft);
         if (timeLeft == 0) {
