@@ -399,7 +399,7 @@ function onTick() {
     var currentTime = new Date().getTime();
     if ((currentTime - startTime) / 1000 > countedSeconds + 1) {
         countedSeconds = Math.floor((currentTime - startTime) / 1000);
-        timeLeft = timeToCountInSeconds - countedSeconds;
+        timeLeft = Math.max(timeToCountInSeconds - countedSeconds, 0);
         setViewTime(timeLeft);
         if (timeLeft == 0) {
             startRing();
